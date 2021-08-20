@@ -38,3 +38,49 @@ nav.main-menu hr {
     margin: 0px;
     padding: 0px;
 }
+
+section.photos1 {
+    position: absolute;
+    width: 386px;
+    height: 404px;
+    left: 527px;
+    top: 230px;
+    background: url(anna-tukhfatullina-food-photographer-stylist-bq6Gd7pQznU-unsplash.jpg);
+    border-radius: 10px;
+}
+
+section.photos2 {
+    position: absolute;
+    width: 387px;
+    height: 420px;
+    left: 933px;
+    top: 172px;
+    background: url(taisiia-shestopal-JZDyFwGAEqY-unsplash.jpg);
+    border-radius: 10px;
+}
+
+section.text {
+    position: absolute;
+    width: 384px;
+    height: 118px;
+    left: 120px;
+    top: 171px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 59px;
+}
+
+.text>p {
+    position: absolute;
+    width: 384px;
+    height: 58px;
+    left: 120px;
+    top: 313px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
