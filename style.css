@@ -1,26 +1,65 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html {
+    background-color: #E5E5E5;
 }
-.visibility-hidden{}
 
-.page-header{}
-.main-menu{}
-.page-main{}
-.page-footer{}
-.intro{}
-.button{}
-.popular{}
-.slider{}
-.slider-item{}
-.slider-description{}
-.slider-item-preview{}
-.slider-controls{}
-.catalog-preview{}
-.discount{}
-.order-steps{}
-.news{}
-.reviews{}
-.contacts{}
-.footer-menu{}
+body {
+    padding: 0;
+    background-color: #ffffff;
+    color: #AE7C78;
+    width: 1440px;
+    margin: 0 auto;
+    font-family: "Montserrat", "Arial";
+}
 
+ul {
+    /* Спрятить маркеры у списков */
+    list-style-type: none;
+}
+
+.visibility-hidden {}
+
+.page-header {}
+
+.main-menu {
+    margin: 26px 0 0 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.main-menu ul {
+    display: flex;
+}
+
+.page-main {}
+
+.page-footer {}
+
+.intro {}
+
+.button {}
+
+.popular {}
+
+.slider {}
+
+.slider-item {}
+
+.slider-description {}
+
+.slider-item-preview {}
+
+.slider-controls {}
+
+.catalog-preview {}
+
+.discount {}
+
+.order-steps {}
+
+.news {}
+
+.reviews {}
+
+.contacts {}
+
+.footer-menu {}
