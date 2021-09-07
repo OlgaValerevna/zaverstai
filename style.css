@@ -1,86 +1,26 @@
-main {
-    color: #AE7C78;
-    position: relative;
-    width: 1440px;
-    height: 4470px;
-    background: #FFFFFF;
-    margin: 0 auto;
+html, body {
+    margin: 0;
+    padding: 0;
 }
+.visibility-hidden{}
 
-body {
-    background: #E5E5E5;
-    margin: 0px;
-    padding: 0px;
-}
+.page-header{}
+.main-menu{}
+.page-main{}
+.page-footer{}
+.intro{}
+.button{}
+.popular{}
+.slider{}
+.slider-item{}
+.slider-description{}
+.slider-item-preview{}
+.slider-controls{}
+.catalog-preview{}
+.discount{}
+.order-steps{}
+.news{}
+.reviews{}
+.contacts{}
+.footer-menu{}
 
-div.logo {
-    position: absolute;
-    width: 100px;
-    height: 32.28px;
-    left: 670px;
-    top: 42px;
-}
-
-nav.main-menu {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-nav.main-menu hr {
-    border: 1px solid #AE7C78;
-    position: absolute;
-    width: 1440px;
-    height: 0px;
-    left: 0px;
-    margin: 0px;
-    padding: 0px;
-}
-
-section.photos1 {
-    position: absolute;
-    width: 386px;
-    height: 404px;
-    left: 527px;
-    top: 230px;
-    background: url(anna-tukhfatullina-food-photographer-stylist-bq6Gd7pQznU-unsplash.jpg);
-    border-radius: 10px;
-}
-
-section.photos2 {
-    position: absolute;
-    width: 387px;
-    height: 420px;
-    left: 933px;
-    top: 172px;
-    background: url(taisiia-shestopal-JZDyFwGAEqY-unsplash.jpg);
-    border-radius: 10px;
-}
-
-section.text {
-    position: absolute;
-    width: 384px;
-    height: 118px;
-    left: 120px;
-    top: 171px;
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 44px;
-    line-height: 59px;
-}
-
-.text>p {
-    position: absolute;
-    width: 384px;
-    height: 58px;
-    left: 120px;
-    top: 313px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-}
