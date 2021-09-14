@@ -1,65 +1,704 @@
-html {
-    background-color: #E5E5E5;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    padding: 0;
-    background-color: #ffffff;
+    background-color: #E5E5E5;
     color: #AE7C78;
-    width: 1440px;
     margin: 0 auto;
-    font-family: "Montserrat", "Arial";
+    font-family: "Montserrat", "Arial", serif;
 }
 
 ul {
-    /* Спрятить маркеры у списков */
     list-style-type: none;
 }
 
-.visibility-hidden {}
+a {
+    text-decoration: none;
+    color: #AE7C78;
+    cursor: pointer;
+}
 
-.page-header {}
+a:hover {
+    text-decoration: underline;
+}
 
-.main-menu {
-    margin: 26px 0 0 0;
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+header, main, footer {
+    width: 1440px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+.page-header {
+    padding: 26px 0 0 0;
+}
+
+.main-menu_container {
+
     border-top: 1px solid;
     border-bottom: 1px solid;
+
 }
 
-.main-menu ul {
+.main-menu_container > ul {
     display: flex;
+    justify-content: space-between;
+    margin: 0 120px;
+    font-size: 16px;
+    height: 64px;
+    align-items: center;
 }
 
-.page-main {}
+.main-menu_container > ul > li:nth-child(3) {
+    margin-right: 224px;
+}
 
-.page-footer {}
+.main-menu_container a.logo {
+    position: absolute;
+    left: 50%;
+    top: 42px;
+    transform: translate(-50%, 0);
 
-.intro {}
+}
 
-.button {}
+.page-main {
+    display: grid;
+}
 
-.popular {}
+section.intro {
+    margin: 81px 120px auto;
+    display: grid;
+    grid-template-columns: 384px 1fr 1fr;
+    grid-template-rows: 142px 122px 247px;
 
-.slider {}
+}
 
-.slider-item {}
+section.intro > h1 {
+    font-family: "Playfair Display", "Arial", serif;
+    font-size: 44px;
+    grid-column: 1;
+    grid-row: 1;
+}
 
-.slider-description {}
+section.intro > h1 span {
+    font-style: italic;
+}
 
-.slider-item-preview {}
+section.intro > p {
+    font-family: "Montserrat", "Arial", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    grid-column: 1;
+}
 
-.slider-controls {}
+section.intro > button {
+    font-family: "Montserrat", "Arial", serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    grid-column: 1;
+    background: #D89999;
+    border-radius: 40px;
+    width: 285px;
+    height: 80px;
+    text-align: center;
+    border: 0;
+}
 
-.catalog-preview {}
+section.intro img {
+    grid-row: 1 / span 3;
+}
 
-.discount {}
+section.intro img:first-of-type {
+    grid-column: 2;
+    margin: 58px 0 auto 23px;
+}
 
-.order-steps {}
+section.intro img:nth-of-type(2) {
+    grid-column: 3;
+    margin: 1px auto auto 20px;
+}
 
-.news {}
+section.intro dl {
+    grid-row: 4;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
 
-.reviews {}
+section.intro dl div {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: 20px 1fr;
+}
 
-.contacts {}
+section.intro dl div:before {
+    grid-column: 1;
+    grid-row: 1/ span 2;
+}
 
-.footer-menu {}
+section.intro dl div dt {
+    font-family: "Montserrat", "Arial", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 2;
+    margin: 0;
+
+}
+
+section.intro dl div dd {
+    font-family: "Montserrat", "Arial", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 2;
+}
+
+
+section.intro dl div:first-of-type {
+    grid-column: 1;
+}
+
+section.intro dl div:first-of-type:before {
+    content: url("img/fast_delivery.svg");
+    width: 82px;
+    height: 52px;
+    margin: 0 20px auto 0;
+}
+
+section.intro dl div:nth-of-type(2) {
+    grid-column: 2;
+}
+
+section.intro dl div:nth-of-type(2):before {
+    content: url("img/fresh_flowers.svg");
+    width: 34px;
+    height: 52px;
+    margin: 0 29px auto 29px;
+}
+
+section.intro dl div:nth-of-type(3) {
+    grid-column: 3;
+}
+
+section.intro dl div:nth-of-type(3):before {
+    content: url("img/photo_of_flowers.svg");
+    width: 59px;
+    height: 52px;
+    margin: 0 13px auto 13px;
+}
+
+section.popular {
+    display: grid;
+    grid-template-rows: 48px 1fr;
+    grid-row-gap: 36px;
+    margin: 80px 323px auto;
+}
+
+section.popular h2 {
+    font-family: "Playfair Display", "Arial", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+}
+
+div.slider {
+    display: grid;
+}
+
+div.slider-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.slider-description h3 {
+    font-family: "Montserrat", "Arial", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 27px 0 20px;
+}
+
+div.slider-description p {
+    font-family: "Montserrat", "Arial", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+
+div.slider-description p.slider-price {
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+
+}
+
+div.slider-description button {
+    font-family: "Montserrat", "Arial", serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    width: 285px;
+    height: 80px;
+    background: #D89999;
+    border-radius: 40px;
+    text-align: center;
+    border: 0;
+    margin-top: 64px;
+
+}
+
+div.slider-controls {
+    margin-top: 8px;
+    text-align: center;
+}
+
+div.slider-controls button {
+    background: url("img/arrow.svg");
+    width: 51px;
+    height: 16px;
+    border: 0;
+    margin: auto;
+}
+
+div.slider-controls button:first-of-type {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-right: 20px;
+}
+
+section.catalog-preview {
+    margin: 80px 120px auto
+}
+
+section.catalog-preview ul {
+    display: grid;
+    grid-column-gap: 19px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.catalog-preview ul > li {
+    width: 387px;
+    height: 442px;
+    border-radius: 10px;
+}
+
+section.catalog-preview ul > li a {
+    color: #FFFFFF;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.catalog-preview ul > li:first-of-type {
+    background-image: linear-gradient(rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url("img/product-1.png");
+}
+
+section.catalog-preview ul > li:nth-child(2) {
+    background-image: linear-gradient(rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url("img/product-2.png");
+}
+
+section.catalog-preview ul > li:nth-child(3) {
+    background-image: linear-gradient(rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url("img/product-3.png");
+}
+
+section.catalog-preview ul > li h3 {
+    font-family: "Playfair Display", "Arial", serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+}
+
+section.catalog-preview ul > li p {
+    font-family: "Montserrat", "Arial", serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+section.discount {
+    margin: 80px 120px auto;
+    display: grid;
+    grid-row-gap: 24px;
+    grid-template-columns: 1fr 590px;
+    grid-template-rows: auto 1fr;
+    color: #FFFFFF;
+    background-color: #AE7C78;
+    font-style: normal;
+    font-weight: normal;
+}
+
+section.discount h2 {
+    grid-column: 1;
+    font-family: "Playfair Display", "Arial", serif;
+    font-size: 44px;
+    white-space: pre-line;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    margin: 40px 20px 0 102px;
+}
+
+section.discount p {
+    grid-column: 1;
+    font-family: "Montserrat", "Arial", serif;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 121px auto 102px;
+}
+
+section.discount img {
+    grid-column: 2;
+    grid-row: 1/ span 2;
+}
+
+section.order-steps {
+    margin: 80px 120px auto;
+    text-align: center;
+}
+
+section.order-steps h2 {
+    font-family: "Playfair Display", "Arial", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+}
+
+section.order-steps ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-top: 36px;
+}
+
+section.order-steps ul > li {
+    font-family: "Montserrat", "Arial", serif;
+    font-style: normal;
+    line-height: 20px;
+    text-align: center;
+}
+
+section.order-steps ul > li h3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+section.order-steps ul > li h3:before {
+    display: block;
+    margin-bottom: 8px;
+}
+
+section.order-steps ul > li:first-of-type h3:before {
+    content: url("img/step-order.svg");
+}
+
+section.order-steps ul > li:nth-of-type(2) h3:before {
+    content: url("img/step-details.svg");
+}
+
+section.order-steps ul > li:nth-of-type(3) h3:before {
+    content: url("img/step-payment.svg");
+}
+
+section.order-steps ul > li:nth-of-type(4) h3:before {
+    content: url("img/step-delivery.svg");
+}
+
+
+section.order-steps ul > li p {
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+section.news {
+    display: grid;
+    grid-template-columns: 1fr 692px;
+    grid-template-rows: 166px 127px 1fr;
+    margin: 80px 120px auto;
+}
+
+section.news h2 {
+    font-family: "Playfair Display", "Arial", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    margin-top: 70px;
+    grid-row: 1;
+}
+
+section.news ul {
+    display: flex;
+    margin-top: 40px;
+}
+
+section.news ul > li:first-of-type {
+    background: url("img/instagram_icon.svg");
+    width: 20px;
+    height: 20px;
+}
+
+section.news ul > li:nth-of-type(2) {
+    background: url("img/facebook_icon.svg");
+    width: 12px;
+    height: 20px;
+    margin: 0 19px 0 21px;
+}
+
+section.news ul > li:nth-of-type(3) {
+    background: url("img/twitter_icon.svg");
+    width: 26px;
+    height: 20px;
+}
+
+
+section.news ul > li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section.news p {
+    font-family: "Montserrat", "Arial", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 40px 100px 0 0;
+    white-space: pre-line;
+}
+
+
+section.news .news-images {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 285px 1fr;
+    grid-template-rows: 220px 220px;
+}
+
+section.news .news-images a:nth-child(-n+3) {
+    grid-column: 1;
+}
+
+section.news .news-images a:nth-child(3) {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+section.reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 80px 120px 80px;
+    border: 1px solid #AE7C78;
+    grid-column-gap: 106px;
+    box-sizing: border-box;
+}
+
+section.reviews h2 {
+    grid-column: 2;
+    font-family: "Playfair Display", "Arial", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-top: 40px;
+}
+
+section.reviews blockquote {
+    grid-row: 2;
+    margin: 40px auto 64px;
+    font-family: "Montserrat", "Arial", serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+section.reviews blockquote:first-of-type {
+    margin-left: 44px;
+}
+
+section.reviews blockquote:last-of-type {
+    margin-right: 44px;
+}
+
+section.reviews blockquote p {
+
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 16px;
+
+}
+
+section.reviews blockquote cite {
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+section.contacts {
+    background: url("img/map.png") no-repeat;
+    height: 644px;
+    display: grid;
+}
+
+section.contacts div {
+    margin: 52px auto auto 222px;
+    background: #F7FAFC;
+    box-shadow: 0 4px 40px rgba(217, 217, 217, 0.3);
+    border-radius: 12px;
+    width: 386px;
+    height: 520px;
+    color: #AE7C78;
+
+}
+
+section.contacts div h2 {
+    font-family: "Playfair Display", "Arial", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 40px auto 42px 35px;
+
+}
+
+section.contacts div ul {
+    margin-left: 40px;
+    height: 340px;
+
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+section.contacts div ul > li {
+    font-family: "Montserrat", "Arial", serif;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 75px;
+
+}
+
+section.contacts div ul > li p {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    align-items: center;
+
+}
+
+section.contacts div ul > li a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    white-space: pre-line;
+    align-items: center;
+}
+
+footer.page-footer {
+    display: grid;
+    height: 97px;
+    background-color: #AE7C78;
+    grid-auto-flow: column;
+    grid-template-columns: 225px auto 192px;
+}
+
+footer.page-footer > a {
+    margin: 24px 0 auto 125px;
+}
+
+nav.footer-menu_container ul {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", "Arial", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    justify-content: space-between;
+    margin: 30px 105px auto 103px;
+}
+
+nav.footer-menu_container > ul > li > a {
+    color: #FFFFFF;
+}
+
+
+footer.page-footer > ul {
+    display: flex;
+    margin-top: 30px;
+}
+
+footer.page-footer > ul a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+footer.page-footer > ul > li:first-of-type {
+    background: url("img/instagram_icon_white.svg");
+    width: 20px;
+    height: 20px;
+}
+
+footer.page-footer > ul > li:nth-of-type(2) {
+    background: url("img/facebook_icon_white.svg");
+    width: 12px;
+    height: 20px;
+    margin: 0 19px 0 21px;
+}
+
+footer.page-footer > ul > li:nth-of-type(3) {
+    background: url("img/twitter_icon_white.svg");
+    width: 26px;
+    height: 20px;
+}
