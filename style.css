@@ -24,11 +24,15 @@ a:hover {
     text-decoration: underline;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: normal;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     width: 1440px;
     background-color: #FFFFFF;
     margin: 0 auto;
@@ -47,13 +51,11 @@ button {
 }
 
 .main-menu_container {
-
     border-top: 1px solid;
     border-bottom: 1px solid;
-
 }
 
-.main-menu_container > ul {
+.main-menu_container>ul {
     display: flex;
     justify-content: space-between;
     margin: 0 120px;
@@ -62,7 +64,7 @@ button {
     align-items: center;
 }
 
-.main-menu_container > ul > li:nth-child(3) {
+.main-menu_container>ul>li:nth-child(3) {
     margin-right: 224px;
 }
 
@@ -71,7 +73,6 @@ button {
     left: 50%;
     top: 42px;
     transform: translate(-50%, 0);
-
 }
 
 .page-main {
@@ -83,21 +84,20 @@ section.intro {
     display: grid;
     grid-template-columns: 384px 1fr 1fr;
     grid-template-rows: 142px 122px 247px;
-
 }
 
-section.intro > h1 {
+section.intro>h1 {
     font-family: "Playfair Display", "Arial", serif;
     font-size: 44px;
     grid-column: 1;
     grid-row: 1;
 }
 
-section.intro > h1 span {
+section.intro>h1 span {
     font-style: italic;
 }
 
-section.intro > p {
+section.intro>p {
     font-family: "Montserrat", "Arial", serif;
     font-style: normal;
     font-weight: normal;
@@ -105,7 +105,7 @@ section.intro > p {
     grid-column: 1;
 }
 
-section.intro > button {
+section.intro>button {
     font-family: "Montserrat", "Arial", serif;
     font-size: 16px;
     color: #FFFFFF;
@@ -159,7 +159,6 @@ section.intro dl div dt {
     line-height: 20px;
     grid-column: 2;
     margin: 0;
-
 }
 
 section.intro dl div dd {
@@ -170,7 +169,6 @@ section.intro dl div dd {
     line-height: 20px;
     grid-column: 2;
 }
-
 
 section.intro dl div:first-of-type {
     grid-column: 1;
@@ -250,12 +248,10 @@ div.slider-description p {
 }
 
 div.slider-description p.slider-price {
-
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 0;
-
 }
 
 div.slider-description button {
@@ -272,7 +268,6 @@ div.slider-description button {
     text-align: center;
     border: 0;
     margin-top: 64px;
-
 }
 
 div.slider-controls {
@@ -303,13 +298,13 @@ section.catalog-preview ul {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-section.catalog-preview ul > li {
+section.catalog-preview ul>li {
     width: 387px;
     height: 442px;
     border-radius: 10px;
 }
 
-section.catalog-preview ul > li a {
+section.catalog-preview ul>li a {
     color: #FFFFFF;
     font-style: normal;
     width: 100%;
@@ -320,19 +315,19 @@ section.catalog-preview ul > li a {
     flex-direction: column;
 }
 
-section.catalog-preview ul > li:first-of-type {
+section.catalog-preview ul>li:first-of-type {
     background-image: linear-gradient(rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url("img/product-1.png");
 }
 
-section.catalog-preview ul > li:nth-child(2) {
+section.catalog-preview ul>li:nth-child(2) {
     background-image: linear-gradient(rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url("img/product-2.png");
 }
 
-section.catalog-preview ul > li:nth-child(3) {
+section.catalog-preview ul>li:nth-child(3) {
     background-image: linear-gradient(rgba(174, 124, 120, 0.6), rgba(174, 124, 120, 0.6)), url("img/product-3.png");
 }
 
-section.catalog-preview ul > li h3 {
+section.catalog-preview ul>li h3 {
     font-family: "Playfair Display", "Arial", serif;
     font-weight: bold;
     font-size: 36px;
@@ -340,7 +335,7 @@ section.catalog-preview ul > li h3 {
     letter-spacing: 0.02em;
 }
 
-section.catalog-preview ul > li p {
+section.catalog-preview ul>li p {
     font-family: "Montserrat", "Arial", serif;
     font-weight: normal;
     font-size: 16px;
@@ -404,41 +399,40 @@ section.order-steps ul {
     margin-top: 36px;
 }
 
-section.order-steps ul > li {
+section.order-steps ul>li {
     font-family: "Montserrat", "Arial", serif;
     font-style: normal;
     line-height: 20px;
     text-align: center;
 }
 
-section.order-steps ul > li h3 {
+section.order-steps ul>li h3 {
     font-weight: 500;
     font-size: 16px;
 }
 
-section.order-steps ul > li h3:before {
+section.order-steps ul>li h3:before {
     display: block;
     margin-bottom: 8px;
 }
 
-section.order-steps ul > li:first-of-type h3:before {
+section.order-steps ul>li:first-of-type h3:before {
     content: url("img/step-order.svg");
 }
 
-section.order-steps ul > li:nth-of-type(2) h3:before {
+section.order-steps ul>li:nth-of-type(2) h3:before {
     content: url("img/step-details.svg");
 }
 
-section.order-steps ul > li:nth-of-type(3) h3:before {
+section.order-steps ul>li:nth-of-type(3) h3:before {
     content: url("img/step-payment.svg");
 }
 
-section.order-steps ul > li:nth-of-type(4) h3:before {
+section.order-steps ul>li:nth-of-type(4) h3:before {
     content: url("img/step-delivery.svg");
 }
 
-
-section.order-steps ul > li p {
+section.order-steps ul>li p {
     font-weight: normal;
     font-size: 16px;
     margin-top: 8px;
@@ -467,27 +461,26 @@ section.news ul {
     margin-top: 40px;
 }
 
-section.news ul > li:first-of-type {
+section.news ul>li:first-of-type {
     background: url("img/instagram_icon.svg");
     width: 20px;
     height: 20px;
 }
 
-section.news ul > li:nth-of-type(2) {
+section.news ul>li:nth-of-type(2) {
     background: url("img/facebook_icon.svg");
     width: 12px;
     height: 20px;
     margin: 0 19px 0 21px;
 }
 
-section.news ul > li:nth-of-type(3) {
+section.news ul>li:nth-of-type(3) {
     background: url("img/twitter_icon.svg");
     width: 26px;
     height: 20px;
 }
 
-
-section.news ul > li a {
+section.news ul>li a {
     display: block;
     width: 100%;
     height: 100%;
@@ -502,7 +495,6 @@ section.news p {
     margin: 40px 100px 0 0;
     white-space: pre-line;
 }
-
 
 section.news .news-images {
     grid-column: 2;
@@ -538,7 +530,6 @@ section.reviews h2 {
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.02em;
     margin-top: 40px;
@@ -563,17 +554,14 @@ section.reviews blockquote:last-of-type {
 }
 
 section.reviews blockquote p {
-
     font-style: normal;
     font-weight: normal;
     margin-bottom: 16px;
-
 }
 
 section.reviews blockquote cite {
     font-style: normal;
     font-weight: 500;
-
 }
 
 section.contacts {
@@ -590,7 +578,6 @@ section.contacts div {
     width: 386px;
     height: 520px;
     color: #AE7C78;
-
 }
 
 section.contacts div h2 {
@@ -600,41 +587,33 @@ section.contacts div h2 {
     font-size: 36px;
     line-height: 48px;
     margin: 40px auto 42px 35px;
-
 }
 
 section.contacts div ul {
     margin-left: 40px;
     height: 340px;
-
     flex-direction: column;
     display: flex;
     justify-content: space-between;
-
-
 }
 
-section.contacts div ul > li {
+section.contacts div ul>li {
     font-family: "Montserrat", "Arial", serif;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     height: 75px;
-
 }
 
-section.contacts div ul > li p {
-
+section.contacts div ul>li p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-
     align-items: center;
-
 }
 
-section.contacts div ul > li a {
+section.contacts div ul>li a {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -652,7 +631,7 @@ footer.page-footer {
     grid-template-columns: 225px auto 192px;
 }
 
-footer.page-footer > a {
+footer.page-footer>a {
     margin: 24px 0 auto 125px;
 }
 
@@ -668,36 +647,35 @@ nav.footer-menu_container ul {
     margin: 30px 105px auto 103px;
 }
 
-nav.footer-menu_container > ul > li > a {
+nav.footer-menu_container>ul>li>a {
     color: #FFFFFF;
 }
 
-
-footer.page-footer > ul {
+footer.page-footer>ul {
     display: flex;
     margin-top: 30px;
 }
 
-footer.page-footer > ul a {
+footer.page-footer>ul a {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-footer.page-footer > ul > li:first-of-type {
+footer.page-footer>ul>li:first-of-type {
     background: url("img/instagram_icon_white.svg");
     width: 20px;
     height: 20px;
 }
 
-footer.page-footer > ul > li:nth-of-type(2) {
+footer.page-footer>ul>li:nth-of-type(2) {
     background: url("img/facebook_icon_white.svg");
     width: 12px;
     height: 20px;
     margin: 0 19px 0 21px;
 }
 
-footer.page-footer > ul > li:nth-of-type(3) {
+footer.page-footer>ul>li:nth-of-type(3) {
     background: url("img/twitter_icon_white.svg");
     width: 26px;
     height: 20px;
