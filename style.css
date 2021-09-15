@@ -70,9 +70,8 @@ button {
 
 .main-menu_container a.logo {
     position: absolute;
-    left: 50%;
+    margin-left: 670px;
     top: 42px;
-    transform: translate(-50%, 0);
 }
 
 .page-main {
